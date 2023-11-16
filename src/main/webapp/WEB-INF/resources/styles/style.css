@@ -1,0 +1,217 @@
+@CHARSET "UTF-8";
+
+
+	
+/*공통 코드 영역 시작*/
+.pointer{cursor: pointer;}
+
+.tr{text-align: right;}
+.tl{text-align: left;}
+.tc{text-align: center;}
+
+.w0{width:0%;} 
+.w5{width:5%;} 
+.w10 {width:10%;} 
+.w15{width:15%;} 
+.w20{width:20%;} 
+.w25{width:25%;} 
+.w30{width:30%;} 
+.w35{width:35%;} 
+.w40{width:40%;} 
+.w45{width:45%;} 
+.w50{width:50%;} 
+.w55{width:55%;} 
+.w60{width:60%;} 
+.w65{width:65%;} 
+.w70{width:70%;} 
+.w75{width:75%;} 
+.w80{width:80%;} 
+.w85{width:85%;} 
+.w90{width:90%;} 
+.w95{width:95%;} 
+.w100{width:100%;} 
+
+.h0{height:0%;} 
+.h5{height:5%;} 
+.h10{height:10%;} 
+.h15{height:15%;} 
+.h20{height:20%;} 
+.h25{height:25%;} 
+.h30{height:30%;} 
+.h35{height:35%;} 
+.h40{height:40%;} 
+.h45{height:45%;} 
+.h50{height:50%;} 
+.h55{height:55%;} 
+.h60{height:60%;} 
+.h65{height:65%;} 
+.h70{height:70%;} 
+.h75{height:75%;} 
+.h80{height:80%;} 
+.h85{height:85%;} 
+.h90{height:90%;} 
+.h95{height:95%;} 
+.h100{height:100%;} 
+
+.h0px{height:0px;} 
+.h5px{height:5px;} 
+.h10px{height:10px;} 
+.h15px{height:15px;} 
+.h20px{height:20px;} 
+.h25px{height:25px;} 
+.h30px{height:30px;} 
+.h35px{height:35px;} 
+.h40px{height:40px;} 
+.h45px{height:45px;} 
+.h50px{height:50px;} 
+.h55px{height:55px;} 
+.h60px{height:60px;} 
+.h65px{height:65px;} 
+.h70px{height:70px;} 
+.h75px{height:75px;} 
+.h80px{height:80px;} 
+.h85px{height:85px;} 
+.h90px{height:90px;} 
+.h95px{height:95px;} 
+.h100px{height:100px;} 
+.h105px{height:105px;} 
+.h110px{height:110px;} 
+.h115px{height:115px;} 
+.h120px{height:120px;} 
+.h125px{height:125px;} 
+.h130px{height:130px;} 
+.h135px{height:135px;} 
+.h140px{height:140px;} 
+.h145px{height:145px;} 
+.h150px{height:150px;} 
+.h155px{height:155px;} 
+.h160px{height:160px;} 
+.h165px{height:165px;} 
+.h170px{height:170px;} 
+.h175px{height:175px;} 
+.h180px{height:180px;} 
+.h185px{height:185px;} 
+.h190px{height:190px;} 
+.h195px{height:195px;} 
+.h200px{height:200px;} 
+
+.lh0px{line-height:0px;} 
+.lh5px{line-height:5px;} 
+.lh10px{line-height:10px;} 
+.lh15px{line-height:15px;} 
+.lh20px{line-height:20px;} 
+.lh25px{line-height:25px;} 
+.lh30px{line-height:30px;} 
+.lh35px{line-height:35px;} 
+.lh40px{line-height:40px;} 
+.lh45px{line-height:45px;} 
+.lh50px{line-height:50px;} 
+.lh55px{line-height:55px;} 
+.lh60px{line-height:60px;} 
+.lh65px{line-height:65px;} 
+.lh70px{line-height:70px;} 
+.lh75px{line-height:75px;} 
+.lh80px{line-height:80px;} 
+.lh85px{line-height:85px;} 
+.lh90px{line-height:90px;} 
+.lh95px{line-height:95px;} 
+.lh100px{line-height:100px;} 
+.lh105px{line-height:105px;} 
+.lh110px{line-height:110px;} 
+.lh115px{line-height:115px;} 
+.lh120px{line-height:120px;} 
+.lh125px{line-height:125px;} 
+.lh130px{line-height:130px;} 
+.lh135px{line-height:135px;} 
+.lh140px{line-height:140px;} 
+.lh145px{line-height:145px;} 
+.lh150px{line-height:150px;} 
+.lh155px{line-height:155px;} 
+.lh160px{line-height:160px;} 
+.lh165px{line-height:165px;} 
+.lh170px{line-height:170px;} 
+.lh175px{line-height:175px;} 
+.lh180px{line-height:180px;} 
+.lh185px{line-height:185px;} 
+.lh190px{line-height:190px;} 
+.lh195px{line-height:195px;} 
+.lh200px{line-height:200px;} 	
+
+.display-inb{display: inline-block;}
+.display-in{display: inline;}
+.display-b{display: block;}
+.display-n{display: none;}	
+
+.colorBlue{
+	color: blue;
+}
+
+.colorRed{
+	color: red;
+}
+
+.form-control:focus{
+	border-color: #adb5bd;
+	box-shadow: 0 0 0 0.25rem #adb5bd;
+}
+
+.w10{
+	width: 10%;
+}
+
+.w100 {
+	width: 100%;
+}
+
+/* required 클래스를 가진 요소 앞에 붉은 별표 추가 */
+.redStar::before {
+    content: '*';
+    color: red;
+    margin-right: 4px;
+}
+/*공통 코드 영역 끝*/
+
+/*개별 코드 영역 시작*/
+body{
+	background-image: url("/resources/images/cloud_background.jpg");
+	background-size: cover; /* 이미지가 화면을 완전히 채우도록 함 */
+	background-position: center; /* 이미지가 화면 중앙에 위치하도록 함 */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+textarea{
+	resize: none;
+}
+
+label, .question{
+	font-weight: 900;
+}
+
+.content{
+	width: 80%;
+	margin: 5% 0;
+}
+
+.titleBox{
+	margin: 0 0 50px 0;
+	text-align: center; 
+}
+
+.infoBox{
+	margin: 0 0 50px 0;
+	text-align: left;
+}
+
+.qBox{
+	margin: 0 0 20px 0;
+}
+
+.btnBox{
+	text-align: right;
+}
+
+.etcInput{
+	height: 25px;
+}
+/*개별 코드 영역 끝*/

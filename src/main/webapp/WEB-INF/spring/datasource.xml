@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<!-- <context:property-placeholder location="classpath:config/database.properties"/> -->
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://testdb.cuyvsumefwmb.ap-northeast-2.rds.amazonaws.com:3306/DDC?allowMultiQueries=true"></property>
+		<property name="username" value="admin"></property>
+		<property name="password" value="12345678"></property>		
+	</bean>
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property> <!-- dataSource 아이디 -->
+		<property name="configLocation" value="classpath:mybatis-config.xml"></property> <!-- config 파일 경로 -->
+		<property name="mapperLocations"> <!-- mapper 파일 경로 -->
+			<list>
+				<value>classpath:mappers/*.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory"></constructor-arg>
+	</bean>
+	
+	<!-- 트랜잭션 매니저 빈 생성 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="*"/><!-- 모든 메소드를 트랜잭션 처리 -->
+		</tx:attributes>
+	</tx:advice>
+	
+	<aop:config>
+		<!-- ..Service 클래스의 모든 메소드를 트랜잭션 처리 -->
+		<aop:pointcut expression="execution(* kr.co.company.hello.service.*Service.*(..))" id="transactionPointcut"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="transactionPointcut"/>
+	</aop:config>
+	
+</beans>

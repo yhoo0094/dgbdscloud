@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.commonMapper">
+
+	<!-- 서버시간 가져오기 테스트 -->
+	<select id="selectServerTime" resultType="map" parameterType="string">
+		SELECT SYSDATE()
+	</select>
+	
+	<!-- 사번 존재여부 확인 -->
+	<select id="isExistEmpNum" resultType="boolean" parameterType="map">
+		SELECT IF(COUNT(*) = 0, 1, 0)
+		  FROM TB_ANSW
+		 WHERE EMP_NUM = #{empNum}
+	</select>
+
+	<!-- 응답 결과 저장 -->
+	<insert id="insertAns" parameterType="map">
+		INSERT INTO TB_ANSW
+		( EMP_NUM					/* 사번 */
+		, EMP_NAME                  /* 이름 */
+		, EMP_RANK                  /* 직급 */
+		, CLOUD_INT                 /* 클라우드 지식 */
+		, CLOUD_INT_ETC             /* 클라우드 지식 기타 */
+		, WHAT_CONT                 /* 교육 내용 */
+		, WHAT_FUTURE               /* 희망 교육 */
+		, WHAT_ETC                  /* 기타 */
+		)
+		VALUES
+		( #{empNum}                 /* 사번 */
+		, #{empName}                /* 이름 */
+		, #{empRank}                /* 직급 */
+		, #{cloudInt}               /* 클라우드 지식 */
+		, #{cloudIntEtc}            /* 클라우드 지식 기타 */
+		, #{whatCont}               /* 교육 내용 */
+		, #{whatFuture}             /* 희망 교육 */
+		, #{whatEtc}                /* 기타 */
+		)
+	</insert>
+	
+	
+</mapper>
