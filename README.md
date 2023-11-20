@@ -48,3 +48,11 @@
 ## 화면 구성
 
 <img src="./images/fullScreen.png" alt="fullScreen.png"/>
+
+* 사용자는 인적 사항 및 물음에 대한 응답을 입력 후 제출한다.
+
+
+
+## 테이블 명세서
+
+<img src="./images/dbTable.png" alt="dbTable.png"/>
