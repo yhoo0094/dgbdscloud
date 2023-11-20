@@ -47,4 +47,4 @@
 
 ## 화면 구성
 
-<img src="./images/fullScreen.png" alt="fullScreen.png" style="border: solid 1px black"/>
+<img src="./images/fullScreen.png" alt="fullScreen.png" style="border: solid 2px black"/>
