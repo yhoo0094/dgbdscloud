@@ -214,4 +214,22 @@ label, .question{
 .etcInput{
 	height: 25px;
 }
+
+.fileDownLink{
+	text-decoration: none;
+	color: blue;
+}
+
+.iconImg{
+    height: 1em; /* 이미지의 높이를 현재 폰트 크기와 같게 설정 */
+    width: auto; /* 이미지의 너비를 비율에 맞게 자동 조정 */
+    vertical-align: middle; /* 이미지를 텍스트 중앙에 정렬 */	
+}
+
+/* 모바일 화면에 대한 스타일 */
+@media (max-width: 768px) {
+    .iconImg {
+        height: 1em; /* 또는 원하는 크기에 맞추어 조정 */
+    }
+}
 /*개별 코드 영역 끝*/

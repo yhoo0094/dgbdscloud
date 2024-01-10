@@ -4,6 +4,11 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta property="og:url" content="https://dgbdscloud.click">
+    <meta property="og:title" content="클라우드 사내튜터">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dgbdscloud.click/resources/images/cloud_background.jpg">
+    <meta property="og:description" content="공유기능 | 열심히 코드를 공부합시다.">
 	<title>dgbdscloud</title>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="<%=request.getContextPath()%>/resources/images/cloud-data.png"> <!-- title 아이콘 변경 -->
@@ -23,10 +28,20 @@
 				</div>
 				
 				<div class="infoBox">
-					<p><b>안녕하세요, 디비디데이터시스템 서비스 개발팀 김상민 프로입니다.</b></p>
+					<p><b>안녕하세요, 디비디데이터시스템 서비스개발팀 김상민 프로입니다.</b></p>
 					<p><b>사내 튜터를 진행하기에 앞서 간단한 설문을 진행하고자 합니다.</b></p>
-					<p><b>해당 설문은 교육 참여 여부와 상관 없이 <span class="colorBlue">누구나 참여 가능</span>합니다.</b></p> 
-					<p><b><span class="colorRed">◈ 교육 참여 신청은 사내 성과관리 시스템을 이용해주시기 바랍니다.</span></b></p>
+					<p><b>해당 설문은 연수 참여 여부와 상관 없이 <span class="colorBlue">누구나 참여 가능</span>합니다.</b></p> 
+					<p><b>연수 관련 궁금한 사항은 <a href="https://open.kakao.com/o/gxm3w9Tf" target='_blank'>카카오톡 오픈채팅</a>으로 문의 부탁드립니다.</b></p>
+					<p><b>연수에 참여하기 위해 
+					<a href="https://ap-northeast-2.console.aws.amazon.com/console/home?region=ap-northeast-2" target='_blank'>AWS</a>
+					,
+					<a href="https://www.gabia.com/" target='_blank'>가비아</a>
+					  계정이 필요합니다(
+						<a href="<%=request.getContextPath()%>/resources\files\part1_AWS회원가입.pdf" download="" class="fileDownLink">
+							<img src="<%=request.getContextPath()%>resources\images\icon-pdf16.png" alt="icon-pdf16.png" class="iconImg">part1_AWS회원가입.pdf
+						</a>
+						).</b></p>
+					<p><b><span class="colorRed">◈ 연수 참여 신청은 사내 성과관리 시스템을 이용해주시기 바랍니다.</span></b></p>
 				</div>
 			
 				<div class="qBox">
@@ -41,7 +56,8 @@
 			
 				<div class="qBox">
 					<p class="question redStar">Q) 직급</p>
-					<select id="empRank" name="empRank" title="직급" class="form-control w20">
+					<select id="empRank" name="empRank" title="직급" class="form-control w20 required">
+						<option value="">선택하세요</option>
 						<option value="1">1급</option>
 						<option value="2">2급</option>
 						<option value="3">3급</option>
@@ -66,12 +82,12 @@
 				</div>
 				
 				<div class="qBox">
-					<p class="question">Q) 이번 교육을 통해 배웠으면 싶은 것은 무엇인가요?</p>
+					<p class="question">Q) 이번 연수를 통해 배웠으면 싶은 것은 무엇인가요?</p>
 					<textarea name="whatCont" rows="5" cols="100"  maxlength="500" class="form-control"></textarea>
 				</div>
 				
 				<div class="qBox">
-					<p class="question">Q) 앞으로 듣고 싶은 교육이 있나요?</p>
+					<p class="question">Q) 앞으로 듣고 싶은 연수가 있나요?</p>
 					<textarea name="whatFuture" rows="5" cols="100"  maxlength="500" class="form-control"></textarea>
 				</div>
 				

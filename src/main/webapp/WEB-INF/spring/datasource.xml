@@ -12,7 +12,7 @@
 	<!-- <context:property-placeholder location="classpath:config/database.properties"/> -->
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
-		<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+		<property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
 		<property name="url" value="jdbc:mysql://testdb.cuyvsumefwmb.ap-northeast-2.rds.amazonaws.com:3306/DDC?allowMultiQueries=true"></property>
 		<property name="username" value="admin"></property>
 		<property name="password" value="12345678"></property>		

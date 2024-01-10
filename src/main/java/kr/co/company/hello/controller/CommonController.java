@@ -49,4 +49,10 @@ public class CommonController {
 		response.setContentType("application/json; charset=UTF-8");
 		response.getWriter().print(json);	//결과 json형태로 담아서 보내기
 	}		
+	
+	@RequestMapping("/files")
+	public void files(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		String redirectUrl = "https://drive.google.com/drive/folders/1pUyYhazOQ8dzhnFXLlZW7sy70AdcVtzv?usp=sharing";
+        response.sendRedirect(redirectUrl);
+	}
 }
