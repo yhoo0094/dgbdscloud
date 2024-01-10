@@ -103,7 +103,7 @@
             <th style="text-align:center">교안</th>            
         </tr>
         <tr>
-            <td style="text-align:center">1</td>
+            <th style="text-align:center">1</th>
             <td style="text-align:left">
                 <b>AWS회원가입</b>  <br />
             </td>
@@ -112,7 +112,7 @@
             </td>
         </tr>       
         <tr>
-            <td style="text-align:center">2</td>
+            <th style="text-align:center">2</th>
             <td style="text-align:left">
                 <b>도메인 구매 및 네임서버  연결하기</b>  <br />
                 1.    가비아 도메인 구매  <br />
@@ -124,7 +124,7 @@
             </td>
         </tr>
         <tr>
-            <td style="text-align:center">3</td>
+            <th style="text-align:center">3</th>
             <td style="text-align:left">
                 <b>클라우드 DB 생성하기</b>  <br />
                 1.	보안 그룹 설정  <br />
@@ -137,7 +137,7 @@
             </td>            
         </tr>
         <tr>
-            <td style="text-align:center">4</td>
+            <th style="text-align:center">4</th>
             <td style="text-align:left">
                 <b>클라우드 서버 구축하기</b>  <br />
                 1.	EC2 인스턴스 생성  <br />
@@ -150,7 +150,7 @@
             </td>            
         </tr>    
         <tr>
-            <td style="text-align:center">5</td>
+            <th style="text-align:center">5</th>
             <td style="text-align:left">
                 <b>https 적용하기</b>  <br />
                 1.	SSL 인증서 발급  <br />
@@ -161,7 +161,7 @@
             </td>             
         </tr>      
         <tr>
-            <td style="text-align:center">6</td>
+            <th style="text-align:center">6</th>
             <td style="text-align:left">
                 <b>프로젝트 배포하기</b>  <br />
                 1. 소스 파일 수정  <br /> 
@@ -174,6 +174,7 @@
         </tr>          
     </tbody>
 </table>
+
 
 
 
