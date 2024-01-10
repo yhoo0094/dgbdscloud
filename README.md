@@ -158,7 +158,7 @@
                 1.    가비아 도메인 구매  <br />
                 2.    Route 53 호스팅 영역 생성  <br />
                 3.    가비아 도메인과 AWS 네임서버 연결  <br />
-                <a href="./사내튜터 자료/교안/part1_AWS회원가입.pdf" download="">part1_AWS회원가입.pdf</a>
+                <a href="./사내튜터 자료/교안/part1_AWS회원가입.pdf" target="_blank">part1_AWS회원가입.pdf</a>
             </td>
         </tr>
         <tr>
