@@ -61,7 +61,7 @@
 
 # 사내 튜터 진행
 
-<img src="../../images/README/image-20240110093800815.png" alt="image-20240110093800815" style="zoom: 50%;" />
+<img src="./images/사내튜터.png" alt="사내튜터.png" style="zoom: 50%;" />
 
  
 
@@ -89,80 +89,39 @@
 
 <table>
     <colgroup>
-        <col width="20%">
+        <col width="10%">
+        <col width="*">
         <col width="*">
     </colgroup>    
     <tbody>
         <tr>
-            <th style="text-align:center">시간</th>         
+            <th style="text-align:center">순번</th>         
             <th style="text-align:center">내용</th>
+            <th style="text-align:center">교안</th>            
         </tr>
-        <tr>
-            <td style="text-align:center">14:00 ~ 14:30</td>
+         <tr>
+            <td style="text-align:center">1</td>
             <td style="text-align:left">
-                <b>도메인 구매 및 네임서버  연결하기</b>  <br />
-                1.    가비아 도메인 구매  <br />
-                2.    Route 53 호스팅 영역 생성  <br />
-                3.    가비아 도메인과 AWS 네임서버 연결
+                <b>AWS회원가입</b>  <br />
             </td>
-        </tr>
-        <tr>
-            <td style="text-align:center">14:30 ~ 15:00</td>
             <td style="text-align:left">
-                <b>클라우드 DB 생성하기</b>  <br />
-                1.	보안 그룹 설정  <br />
-                2.	RDS에 DB인스턴스 생성  <br />
-                3.	파라미터 그룹 생성  <br />
-                4.	DB접속 테스트
+				<a href="./사내튜터 자료/교안/part1_AWS회원가입.pdf">part1_AWS회원가입.pdf</a>
             </td>
-        </tr>
+        </tr>       
         <tr>
-            <td style="text-align:center">15:00 ~ 16:00</td>
-            <td style="text-align:left">
-                <b>클라우드 서버 구축하기</b>  <br />
-                1.	EC2 인스턴스 생성  <br />
-                2.	탄력적 IP 할당  <br />
-                3.	EC2 연결 테스트  <br />
-                4.	Tomcat 설치
-            </td>
-        </tr>    
-        <tr>
-            <td style="text-align:center">16:00 ~ 17:00</td>
-            <td style="text-align:left">
-                <b>https 적용하기</b>  <br />
-                1.	SSL 인증서 발급  <br />
-                2.	로드 밸런서 설정하기
-            </td>
-        </tr>         
-    </tbody>
-</table>
-
-
-
-
-
-<table>
-    <colgroup>
-        <col width="20%">
-        <col width="*">
-    </colgroup>    
-    <tbody>
-        <tr>
-            <th style="text-align:center">시간</th>         
-            <th style="text-align:center">내용</th>
-        </tr>
-        <tr>
-            <td style="text-align:center">14:00 ~ 14:30</td>
+            <td style="text-align:center">2</td>
             <td style="text-align:left">
                 <b>도메인 구매 및 네임서버  연결하기</b>  <br />
                 1.    가비아 도메인 구매  <br />
                 2.    Route 53 호스팅 영역 생성  <br />
                 3.    가비아 도메인과 AWS 네임서버 연결  <br />
-                <a href="./사내튜터 자료/교안/part1_AWS회원가입.pdf" target="_blank">part1_AWS회원가입.pdf</a>
+            </td>
+            <td style="text-align:left">
+				<a href="./사내튜터 자료/교안/part2_도메인 구매 및 네임서버 연결하기.pdf">part2_도메인 구매 및 네임서버 연결하기.pdf</a>
             </td>
         </tr>
         <tr>
-            <td style="text-align:center">14:30 ~ 15:00</td>
+            <td style="text-align:center">3</td>
             <td style="text-align:left">
                 <b>클라우드 DB 생성하기</b>  <br />
                 1.	보안 그룹 설정  <br />
@@ -170,9 +129,12 @@
                 3.	파라미터 그룹 생성  <br />
                 4.	DB접속 테스트
             </td>
+            <td style="text-align:left">
+				<a href="./사내튜터 자료/교안/part3_RDS로 DB 생성하기.pdf">part3_RDS로 DB 생성하기.pdf</a>
+            </td>            
         </tr>
         <tr>
-            <td style="text-align:center">15:00 ~ 16:00</td>
+            <td style="text-align:center">4</td>
             <td style="text-align:left">
                 <b>클라우드 서버 구축하기</b>  <br />
                 1.	EC2 인스턴스 생성  <br />
@@ -180,14 +142,38 @@
                 3.	EC2 연결 테스트  <br />
                 4.	Tomcat 설치
             </td>
+             <td style="text-align:left">
+				<a href="./사내튜터 자료/교안/part4_EC2로 서버 구축하기.pdf">part4_EC2로 서버 구축하기.pdf</a>
+            </td>            
         </tr>    
         <tr>
-            <td style="text-align:center">16:00 ~ 17:00</td>
+            <td style="text-align:center">5</td>
             <td style="text-align:left">
                 <b>https 적용하기</b>  <br />
                 1.	SSL 인증서 발급  <br />
                 2.	로드 밸런서 설정하기
             </td>
-        </tr>         
+            <td style="text-align:left">
+				<a href="./사내튜터 자료/교안/part5_SSL적용하기.pdf">part5_SSL적용하기.pdf</a>
+            </td>             
+        </tr>      
+        <tr>
+            <td style="text-align:center">6</td>
+            <td style="text-align:left">
+                <b>프로젝트 배포하기</b>  <br />
+                1. 소스 파일 수정  <br /> 
+                2. 데이터베이스 생성  <br /> 
+                3. 프로젝트 배포
+            </td>
+            <td style="text-align:left">
+				<a href="./사내튜터 자료/교안/part6_프로젝트 배포하기.pdf">part6_프로젝트 배포하기.pdf</a>
+            </td>             
+        </tr>          
     </tbody>
 </table>
+
+
+
+# 신입사원 교육 진행
+
+<img src="./images/신입사원연수.jpg" alt="신입사원연수.jpg" style="zoom: 50%;" />
