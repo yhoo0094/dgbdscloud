@@ -1,4 +1,4 @@
-#  <p style="color:blue"> DGBDS CLOUD </p>
+#   DGBDS CLOUD
 
 ## 프로젝트 목적
 
@@ -56,6 +56,12 @@
 ## 테이블 명세서
 
 <img src="./images/dbTable.png" alt="dbTable.png"/>
+
+
+
+
+
+
 
 
 
