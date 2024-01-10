@@ -109,7 +109,7 @@
             </td>
         </tr>       
         <tr>
-            <td style="text-align:center">2</td>
+            <td style="text-align:center"><center>2</center></td>
             <td style="text-align:left">
                 <b>도메인 구매 및 네임서버  연결하기</b>  <br />
                 1.    가비아 도메인 구매  <br />
