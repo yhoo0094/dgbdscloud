@@ -1,0 +1,691 @@
+28-Nov-2023 07:42:23.646 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+28-Nov-2023 07:43:56.990 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\KimSangMin\OneDrive\바탕 화면\launch_roulette\apache-tomcat-8.5.95\work\Catalina\localhost\ROOT\org\apache\jsp\JSP\selectMenuList_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. org.json.simple.JSONArray resolves to a package
+
+코드 생성된 자바 파일 [C:\Users\KimSangMin\OneDrive\바탕 화면\launch_roulette\apache-tomcat-8.5.95\work\Catalina\localhost\ROOT\org\apache\jsp\JSP\selectMenuList_jsp.java]의 [16] 행에서 오류가 발생했습니다.
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\KimSangMin\OneDrive\바탕 화면\launch_roulette\apache-tomcat-8.5.95\work\Catalina\localhost\ROOT\org\apache\jsp\JSP\selectMenuList_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. org.json.simple.JSONArray resolves to a package
+
+코드 생성된 자바 파일 [C:\Users\KimSangMin\OneDrive\바탕 화면\launch_roulette\apache-tomcat-8.5.95\work\Catalina\localhost\ROOT\org\apache\jsp\JSP\selectMenuList_jsp.java]의 [16] 행에서 오류가 발생했습니다.
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+28-Nov-2023 07:49:30.540 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\KimSangMin\OneDrive\바탕 화면\launch_roulette\apache-tomcat-8.5.95\work\Catalina\localhost\ROOT\org\apache\jsp\JSP\selectMenuList_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. org.json.simple.JSONArray resolves to a package
+
+코드 생성된 자바 파일 [C:\Users\KimSangMin\OneDrive\바탕 화면\launch_roulette\apache-tomcat-8.5.95\work\Catalina\localhost\ROOT\org\apache\jsp\JSP\selectMenuList_jsp.java]의 [16] 행에서 오류가 발생했습니다.
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\KimSangMin\OneDrive\바탕 화면\launch_roulette\apache-tomcat-8.5.95\work\Catalina\localhost\ROOT\org\apache\jsp\JSP\selectMenuList_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. org.json.simple.JSONArray resolves to a package
+
+코드 생성된 자바 파일 [C:\Users\KimSangMin\OneDrive\바탕 화면\launch_roulette\apache-tomcat-8.5.95\work\Catalina\localhost\ROOT\org\apache\jsp\JSP\selectMenuList_jsp.java]의 [16] 행에서 오류가 발생했습니다.
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [19] 행에서 오류가 발생했습니다.
+JSONArray cannot be resolved to a type
+16:     String sql = "SELECT * FROM TB_MENU";
+17:     rs = stmt.executeQuery(sql);
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+JSP 파일 [/JSP/selectMenuList.jsp]의 [21] 행에서 오류가 발생했습니다.
+JSONObject cannot be resolved to a type
+18: 
+19:     JSONArray menuArray = new JSONArray();
+20:     while (rs.next()) {
+21:     	JSONObject menuObject = new JSONObject();
+22:         menuObject.put("MENU_NO", rs.getInt("MENU_NO"));
+23:         menuObject.put("MENU_NM", rs.getString("MENU_NM"));
+24:         menuArray.add(menuObject);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+28-Nov-2023 07:49:39.881 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+28-Nov-2023 07:49:39.881 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+28-Nov-2023 07:49:46.180 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Nov-2023 07:49:46.180 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Nov-2023 07:49:46.183 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@957ec2f')
+28-Nov-2023 08:01:29.458 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [/JSP/deleteMenu.jsp (행: [3], 열: [2]) 종료되지 않은 [&lt;%] 태그]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: /JSP/deleteMenu.jsp (행: [3], 열: [2]) 종료되지 않은 [&lt;%] 태그
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseScriptlet(Parser.java:786)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1462)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:144)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:375)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+28-Nov-2023 08:04:01.179 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [/JSP/deleteMenu.jsp (행: [3], 열: [2]) 종료되지 않은 [&lt;%] 태그]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: /JSP/deleteMenu.jsp (행: [3], 열: [2]) 종료되지 않은 [&lt;%] 태그
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseScriptlet(Parser.java:786)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1462)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:144)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:375)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+28-Nov-2023 08:04:45.124 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [/JSP/deleteMenu.jsp (행: [3], 열: [2]) 종료되지 않은 [&lt;%] 태그]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: /JSP/deleteMenu.jsp (행: [3], 열: [2]) 종료되지 않은 [&lt;%] 태그
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseScriptlet(Parser.java:786)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1462)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:144)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:375)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+28-Nov-2023 08:08:40.152 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [/JSP/deleteMenu.jsp (행: [3], 열: [2]) 종료되지 않은 [&lt;%] 태그]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: /JSP/deleteMenu.jsp (행: [3], 열: [2]) 종료되지 않은 [&lt;%] 태그
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseScriptlet(Parser.java:786)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1462)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:144)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:203)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:375)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+28-Nov-2023 08:56:41.400 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [14]에서 [/JSP/insertMenu.jsp]을(를) 처리하는 중 예외 발생
+
+11:     Class.forName("com.mysql.cj.jdbc.Driver");
+12:     conn = DriverManager.getConnection(url, user, password);
+13: 
+14:     int menuNo = Integer.parseInt(request.getParameter("menuNo"));
+15:     String menuNm = request.getParameter("menuNm");
+16:     String sql = "INSERT INTO TB_MENU (MENU_NO, MENU_NM) VALUES (?, ?)";
+17:     pstmt = conn.prepareStatement(sql);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NumberFormatException: For input string: "undefined"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:652)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.JSP.insertMenu_jsp._jspService(insertMenu_jsp.java:124)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+28-Nov-2023 08:56:42.704 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [14]에서 [/JSP/insertMenu.jsp]을(를) 처리하는 중 예외 발생
+
+11:     Class.forName("com.mysql.cj.jdbc.Driver");
+12:     conn = DriverManager.getConnection(url, user, password);
+13: 
+14:     int menuNo = Integer.parseInt(request.getParameter("menuNo"));
+15:     String menuNm = request.getParameter("menuNm");
+16:     String sql = "INSERT INTO TB_MENU (MENU_NO, MENU_NM) VALUES (?, ?)";
+17:     pstmt = conn.prepareStatement(sql);
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NumberFormatException: For input string: "undefined"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:652)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.JSP.insertMenu_jsp._jspService(insertMenu_jsp.java:124)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:115)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1698)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
